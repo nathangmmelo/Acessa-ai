@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#eff7ff">
+  <title>Acessa Ai — Entrar</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <main class="login-page">
+    <div class="decoration decoration-top" aria-hidden="true"></div>
+    <div class="decoration decoration-bottom" aria-hidden="true"></div>
+
+    <section class="login-card" aria-labelledby="page-title">
+      <header class="card-header">
+        <h1 id="page-title">Acessa <span>Ai</span></h1>
+        <p id="subtitle">Acesse sua conta</p>
+      </header>
+
+      <form id="auth-form" class="login-form">
+        <div class="form-group" id="name-group" hidden>
+          <label for="nome">Nome completo</label>
+          <div class="input-wrap">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.2"></circle><path d="M5.8 19c.4-3.1 2.5-4.8 6.2-4.8s5.8 1.7 6.2 4.8z"></path></svg>
+            <input id="nome" name="nome" type="text" placeholder="Digite seu nome completo" autocomplete="name" minlength="2" maxlength="120">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <div class="input-wrap">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4.2" y="6" width="15.6" height="12" rx="1.6"></rect><path d="m5 7 7 5.5L19 7"></path></svg>
+            <input id="email" name="email" type="email" placeholder="Digite seu e-mail" autocomplete="email" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="senha">Senha</label>
+          <div class="input-wrap">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5.3" y="10" width="13.4" height="10" rx="1.7"></rect><path d="M8 10V7.2a4 4 0 0 1 8 0V10"></path><path d="M12 14v2.5"></path></svg>
+            <input id="senha" name="senha" type="password" placeholder="Digite sua senha" autocomplete="current-password" required minlength="8" maxlength="128">
+            <button class="toggle-password" type="button" aria-label="Mostrar senha" title="Mostrar senha">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.8 12s3.2-5.2 9.2-5.2 9.2 5.2 9.2 5.2-3.2 5.2-9.2 5.2S2.8 12 2.8 12Z"></path><circle cx="12" cy="12" r="2.4"></circle></svg>
+            </button>
+          </div>
+          <small class="field-hint" id="password-hint" hidden>Use pelo menos 8 caracteres.</small>
+        </div>
+
+        <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+
+        <button class="submit-button" id="submit-button" type="submit">
+          <span id="submit-label">Entrar</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12h14M12.5 5.5 19 12l-6.5 6.5"></path></svg>
+        </button>
+      </form>
+
+      <p class="signup-text"><span id="switch-prompt">Não tem uma conta?</span>
+        <a href="#" id="switch-mode">Criar conta</a>
+      </p>
+    </section>
+  </main>
+</body>
+</html>
