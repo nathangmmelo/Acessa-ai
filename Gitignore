@@ -1,0 +1,50 @@
+
+# Ambiente virtual Python
+.venv/
+venv/
+env/
+
+# Cache e arquivos compilados do Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Variáveis de ambiente e segredos
+.env
+.env.*
+!.env.example
+
+# Banco de dados SQLite
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log
+logs/
+
+# Configurações locais de IDE
+.vscode/
+.idea/
+
+# Arquivos do macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Arquivos temporários
+*.tmp
+*.bak
+*.swp
+*~
+
+# Cobertura de testes
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Build e distribuição Python
+build/
+dist/
+*.egg-info/
